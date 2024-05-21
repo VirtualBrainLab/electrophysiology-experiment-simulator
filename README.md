@@ -1,1 +1,5 @@
-# electrophysiology-experiment-simulator
+# Electrophysiology Experiment Simulator
+
+## Prototype
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nVtiKZCGLkyRCZ14WTZBYZsbExC2SPk_?usp=sharing)
