@@ -1,7 +1,5 @@
 # Electrophysiology Experiment Simulator
 
-> Replay an electrophysiology experiment and explore data found at insertions.
-
 Project by [Jasmine Schoch][jas] and [Kenneth Yang][ken] based on their work in the [Virtual Brain Lab][vbl] (VBL) group, part of the [Steinmetz Lab][ste].
 
 # Background
