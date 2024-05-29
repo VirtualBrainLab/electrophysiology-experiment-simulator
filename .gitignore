@@ -298,3 +298,5 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,jupyternotebooks
+
+src/electrophysiology_experiment_simulator/data
