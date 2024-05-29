@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "electrophysiology-experiment-simulator"
+dynamic = ["version"]
+description = 'Replay an electrophysiology experiment and explore data found at insertions.'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Kenneth Yang", email = "kjy5@uw.edu" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "ipympl",
+  "oursin==0.5.4"
+]
+
+[project.urls]
+Documentation = "https://github.com/Kenneth Yang/electrophysiology-experiment-simulator#readme"
+Issues = "https://github.com/Kenneth Yang/electrophysiology-experiment-simulator/issues"
+Source = "https://github.com/Kenneth Yang/electrophysiology-experiment-simulator"
+
+[tool.hatch.version]
+path = "src/electrophysiology_experiment_simulator/__about__.py"
+
+[tool.hatch.envs.default]
+python = "3.12"
+dependencies = [
+  "notebook",
+]
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/electrophysiology_experiment_simulator tests}"
+
+[tool.coverage.run]
+source_pkgs = ["electrophysiology_experiment_simulator", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/electrophysiology_experiment_simulator/__about__.py",
+]
+
+[tool.coverage.paths]
+electrophysiology_experiment_simulator = ["src/electrophysiology_experiment_simulator", "*/electrophysiology-experiment-simulator/src/electrophysiology_experiment_simulator"]
+tests = ["tests", "*/electrophysiology-experiment-simulator/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
