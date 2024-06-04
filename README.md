@@ -15,9 +15,8 @@ This project is interested in taking the dense electrical signal data from exper
 
 # Usage
 
-[![Open In Colab](https://img.shields.io/badge/Open_in_Colab-_?logo=googlecolab&labelColor=gray&color=blue)](https://colab.research.google.com/drive/1nVtiKZCGLkyRCZ14WTZBYZsbExC2SPk_?usp=sharing)
+[![Open In Colab](https://img.shields.io/badge/Open_in_Colab-_?logo=googlecolab&labelColor=gray&color=blue)](https://colab.research.google.com/github/VirtualBrainLab/electrophysiology-experiment-simulator/blob/main/src/electrophysiology_experiment_simulator/pinpoint_interactive_graphs_demo.ipynb)
 
-**UPDATE COLAB LINK**
 
 Our product is both a visualization tool and a method of ingesting the raw data stream from an electrophysiology experiment. This is why we have our components laid out in a Python notebook (letting users ingest their raw data and process it with Python). The format of the data we are using is from the data streams gathered by Anna Li in her research project at the Steinmetz Lab.
 
